@@ -1,0 +1,242 @@
+body{
+    margin: 0px;
+    width: 100vw;
+    height: 100vh;
+    background: gray;
+    color: black;
+    font-family: "Lobster", cursive;
+}
+
+.nav{
+    background: rgba(112, 166, 210, 0.74);
+    display: flex;
+    height: 10vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+#name{
+    color: white;
+    size: 30px;
+    padding: 20px;
+    display: inline;
+}
+
+
+.option{
+    padding: 5px;
+    color: white;
+}
+
+.option:hover{
+    color: black;
+    border-radius: 15px;
+    background-color: #76889e;
+}
+
+.game{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.game-area{
+    background: gray;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-around;
+
+
+}
+
+.dice-area{
+    padding: 1vw;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    justify-content: center;
+}
+
+#dice{
+    width: 6vw;
+    align-self: center;
+
+}
+#roll-dice-btn{
+    width:15vw;
+    height: 6vh;
+    margin: 12px;
+    font-family: "Lobster", cursive;
+    color: white;
+    display: block;
+    align-self: center;
+    border-radius: 5vw;
+    margin: 2vh;
+}
+
+#player-turn{
+    align-self: center;
+}
+
+
+#board {
+    border-radius: 25px;
+    border-width: 2px;
+    display: flex;
+    margin: 2vw;
+    justify-content: center;
+    /*background: rgba(20, 58, 29, 0.29);*/
+    display: grid;
+     grid-template-columns: 6vw 6vw 6vw 6vw 6vw 6vw;
+    grid-gap:8px;
+
+}
+.cell{
+    background: #c0e3ff;
+    border-radius: 20px;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.tiny{
+    font-size: 8px;
+    padding: 4px;
+    color: blue;
+    text-align:left;
+    
+}
+
+.playerName{
+    color: black;
+    font-size: 15px;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.blackhole{
+    background: black;
+    color:white;
+    border-radius: 20px;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.wormhole{
+    background:white;
+    color:black;
+    border-radius: 20px;
+    height: 8vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.alt-cell{
+    background: rgba(82, 127, 163, 0.62);
+    border-radius: 20px;
+    height: 8vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.player-name{
+    display:flex;
+    padding: 3vh 4vw;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
+}
+.label{
+    padding: 10px;
+}
+.input{
+    border-radius: 12px;
+    width: 20vw;
+    height: 5vh;
+    padding: 2vh;
+}
+.button{
+    background: #76889e;
+
+}
+
+#start{
+    background: #76889e;
+    width: 18vw;
+    height: 5vh;
+    margin: 2vh 2vw;
+    align-self: center;
+    border-radius: 2vh;
+
+}
+
+.game-buttons{
+    display: flex;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+}
+#reset{
+    width: 20vw;
+    border-radius: 3vw;
+    margin: 15px;
+    height: 7vh;
+    align-self: center;
+    justify-self: center;
+}
+#restart{
+    width: 20vw;
+    height: 7vh;
+    margin: 15px;
+    border-radius: 3vw;
+    align-self: center;
+    justify-self: center;
+}
+
+table,th,td{
+    border: 1px solid black;
+    font-weight: lighter;
+    color: aliceblue;
+    padding: 12px;
+    size: 10dp;
+}
+.leader-board{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#leaderboard{
+    justify-content: center;
+   flex-flow: end;
+    margin: 8vh 8vw;
+    border-collapse: collapse;
+    
+}
